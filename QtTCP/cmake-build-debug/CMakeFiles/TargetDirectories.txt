@@ -1,0 +1,3 @@
+/home/sangjun/CLionProjects/QtTCP/cmake-build-debug/CMakeFiles/QtTCP.dir
+/home/sangjun/CLionProjects/QtTCP/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sangjun/CLionProjects/QtTCP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
