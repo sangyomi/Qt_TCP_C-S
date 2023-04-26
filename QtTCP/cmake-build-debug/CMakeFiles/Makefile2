@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/233/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /snap/clion/234/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/233/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /snap/clion/234/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sangjun/CLionProjects/QtTCP
+CMAKE_SOURCE_DIR = /home/sangjun/QT_TCP/QtTCP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sangjun/CLionProjects/QtTCP/cmake-build-debug
+CMAKE_BINARY_DIR = /home/sangjun/QT_TCP/QtTCP/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/QtTCP.dir/clean
 CMakeFiles/QtTCP.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sangjun/CLionProjects/QtTCP/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target QtTCP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sangjun/QT_TCP/QtTCP/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target QtTCP"
 .PHONY : CMakeFiles/QtTCP.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/QtTCP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sangjun/CLionProjects/QtTCP/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sangjun/QT_TCP/QtTCP/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/QtTCP.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sangjun/CLionProjects/QtTCP/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sangjun/QT_TCP/QtTCP/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/QtTCP.dir/rule
 
 # Convenience name for target.

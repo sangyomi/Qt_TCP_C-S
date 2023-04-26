@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/sangjun/CLionProjects/QtTCP/cmake-build-debug",
-		"source" : "/home/sangjun/CLionProjects/QtTCP"
+		"build" : "/home/sangjun/QT_TCP/QtTCP/cmake-build-debug",
+		"source" : "/home/sangjun/QT_TCP/QtTCP"
 	},
 	"version" : 
 	{

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/sangjun/CLionProjects/QtTCPClient/cmake-build-debug"
+			"value" : "/home/sangjun/QT_TCP/QtTCP/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -151,7 +151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/233/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/snap/clion/234/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -163,7 +163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/233/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/snap/clion/234/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/233/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/snap/clion/234/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -627,7 +627,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/sangjun/CLionProjects/QtTCPClient/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/sangjun/QT_TCP/QtTCP/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -687,7 +687,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/sangjun/CLionProjects/QtTCPClient"
+			"value" : "/home/sangjun/QT_TCP/QtTCP"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -927,7 +927,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "QtTCPClient"
+			"value" : "QtTCP"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -971,7 +971,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/233/bin/cmake/linux/x64/share/cmake-3.25"
+			"value" : "/snap/clion/234/bin/cmake/linux/x64/share/cmake-3.25"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1302,7 +1302,7 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/cmake/Qt5"
 		},
 		{
-			"name" : "QtTCPClient_BINARY_DIR",
+			"name" : "QtTCP_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1311,10 +1311,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/sangjun/CLionProjects/QtTCPClient/cmake-build-debug"
+			"value" : "/home/sangjun/QT_TCP/QtTCP/cmake-build-debug"
 		},
 		{
-			"name" : "QtTCPClient_IS_TOP_LEVEL",
+			"name" : "QtTCP_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1326,7 +1326,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "QtTCPClient_SOURCE_DIR",
+			"name" : "QtTCP_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1335,7 +1335,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/sangjun/CLionProjects/QtTCPClient"
+			"value" : "/home/sangjun/QT_TCP/QtTCP"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

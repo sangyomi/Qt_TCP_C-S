@@ -1,7 +1,7 @@
 CMakeFiles/QtTCPClient.dir/joy.cpp.o: \
- /home/sangjun/CLionProjects/QtTCPClient/joy.cpp \
- /usr/include/stdc-predef.h /home/sangjun/CLionProjects/QtTCPClient/joy.h \
- /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_algobase.h \
+ /home/sangjun/QT_TCP/QtTCPClient/joy.cpp /usr/include/stdc-predef.h \
+ /home/sangjun/QT_TCP/QtTCPClient/joy.h /usr/include/c++/9/vector \
+ /usr/include/c++/9/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \

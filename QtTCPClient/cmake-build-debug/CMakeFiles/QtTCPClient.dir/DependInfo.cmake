@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sangjun/CLionProjects/QtTCPClient/joy.cpp" "CMakeFiles/QtTCPClient.dir/joy.cpp.o" "gcc" "CMakeFiles/QtTCPClient.dir/joy.cpp.o.d"
-  "/home/sangjun/CLionProjects/QtTCPClient/main.cpp" "CMakeFiles/QtTCPClient.dir/main.cpp.o" "gcc" "CMakeFiles/QtTCPClient.dir/main.cpp.o.d"
+  "/home/sangjun/QT_TCP/QtTCPClient/main.cpp" "CMakeFiles/QtTCPClient.dir/main.cpp.o" "gcc" "CMakeFiles/QtTCPClient.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -1,4 +1,4 @@
-# Install script for directory: /home/sangjun/CLionProjects/QtTCPClient
+# Install script for directory: /home/sangjun/QT_TCP/QtTCPClient
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sangjun/CLionProjects/QtTCPClient/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sangjun/QT_TCP/QtTCPClient/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

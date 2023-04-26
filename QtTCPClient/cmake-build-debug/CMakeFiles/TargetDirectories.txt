@@ -1,3 +1,3 @@
-/home/sangjun/CLionProjects/QtTCPClient/cmake-build-debug/CMakeFiles/QtTCPClient.dir
-/home/sangjun/CLionProjects/QtTCPClient/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/sangjun/CLionProjects/QtTCPClient/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sangjun/QT_TCP/QtTCPClient/cmake-build-debug/CMakeFiles/QtTCPClient.dir
+/home/sangjun/QT_TCP/QtTCPClient/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sangjun/QT_TCP/QtTCPClient/cmake-build-debug/CMakeFiles/rebuild_cache.dir

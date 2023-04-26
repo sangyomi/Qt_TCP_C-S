@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/QtTCPClient.dir/joy.cpp.o"
-  "CMakeFiles/QtTCPClient.dir/joy.cpp.o.d"
   "CMakeFiles/QtTCPClient.dir/main.cpp.o"
   "CMakeFiles/QtTCPClient.dir/main.cpp.o.d"
   "QtTCPClient"

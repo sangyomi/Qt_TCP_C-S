@@ -6,7 +6,7 @@
 void startServer()
 {
     // 서버 IP 주소 및 포트 설정
-    const QHostAddress serverAddress("127.0.0.1");
+    const QHostAddress serverAddress(QHostAddress::Any);
     const quint16 serverPort = 12345;
 
     // 서버 생성 및 연결 대기

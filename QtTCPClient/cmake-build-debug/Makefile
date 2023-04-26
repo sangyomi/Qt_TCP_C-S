@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/233/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /snap/clion/234/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/233/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /snap/clion/234/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sangjun/CLionProjects/QtTCPClient
+CMAKE_SOURCE_DIR = /home/sangjun/QT_TCP/QtTCPClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sangjun/CLionProjects/QtTCPClient/cmake-build-debug
+CMAKE_BINARY_DIR = /home/sangjun/QT_TCP/QtTCPClient/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/sangjun/CLionProjects/QtTCPClient/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/233/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/234/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/233/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/234/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sangjun/CLionProjects/QtTCPClient/cmake-build-debug/CMakeFiles /home/sangjun/CLionProjects/QtTCPClient/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sangjun/QT_TCP/QtTCPClient/cmake-build-debug/CMakeFiles /home/sangjun/QT_TCP/QtTCPClient/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sangjun/CLionProjects/QtTCPClient/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sangjun/QT_TCP/QtTCPClient/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,30 +129,6 @@ QtTCPClient/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/build
 .PHONY : QtTCPClient/fast
 
-joy.o: joy.cpp.o
-.PHONY : joy.o
-
-# target to build an object file
-joy.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/joy.cpp.o
-.PHONY : joy.cpp.o
-
-joy.i: joy.cpp.i
-.PHONY : joy.i
-
-# target to preprocess a source file
-joy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/joy.cpp.i
-.PHONY : joy.cpp.i
-
-joy.s: joy.cpp.s
-.PHONY : joy.s
-
-# target to generate assembly for a file
-joy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/joy.cpp.s
-.PHONY : joy.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -186,9 +162,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... QtTCPClient"
-	@echo "... joy.o"
-	@echo "... joy.i"
-	@echo "... joy.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -6,7 +6,7 @@
 void sendData()
 {
     // 서버 IP 주소 및 포트 설정
-    const QHostAddress serverAddress("127.0.0.1");
+    const QHostAddress serverAddress("192.168.0.124");
     const quint16 serverPort = 12345;
 
     // 서버에 연결
