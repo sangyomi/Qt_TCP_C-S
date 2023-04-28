@@ -102,6 +102,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/JoystickOnex.cpp">
+			<Option target="QtTCPClient"/>
+		</Unit>
+		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/JoystickOnex.h">
+			<Option target="QtTCPClient"/>
+		</Unit>
 		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/main.cpp">
 			<Option target="QtTCPClient"/>
 		</Unit>

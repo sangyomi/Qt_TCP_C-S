@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug"/>
+				<Option working_dir="/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="JOY_TCP">
-				<Option output="/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/JOY_TCP" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug"/>
+				<Option output="/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/JOY_TCP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 JOY_TCP"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 JOY_TCP"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="JOY_TCP/fast">
-				<Option output="/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/JOY_TCP" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug"/>
+				<Option output="/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/JOY_TCP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,37 +55,43 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 JOY_TCP/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 JOY_TCP/fast"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug"/>
+				<Option working_dir="/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug"/>
+				<Option working_dir="/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j6 -f &quot;/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sangjun/CLionProjects/JOY_TCP/main.cpp">
+		<Unit filename="/home/sangjun/QT_TCP/JOY_TCP/JoystickOnex.cpp">
 			<Option target="JOY_TCP"/>
 		</Unit>
-		<Unit filename="/home/sangjun/CLionProjects/JOY_TCP/CMakeLists.txt">
+		<Unit filename="/home/sangjun/QT_TCP/JOY_TCP/JoystickOnex.h">
+			<Option target="JOY_TCP"/>
+		</Unit>
+		<Unit filename="/home/sangjun/QT_TCP/JOY_TCP/main.cpp">
+			<Option target="JOY_TCP"/>
+		</Unit>
+		<Unit filename="/home/sangjun/QT_TCP/JOY_TCP/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

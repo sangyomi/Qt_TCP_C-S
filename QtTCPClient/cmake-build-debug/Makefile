@@ -129,6 +129,30 @@ QtTCPClient/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/build
 .PHONY : QtTCPClient/fast
 
+JoystickOnex.o: JoystickOnex.cpp.o
+.PHONY : JoystickOnex.o
+
+# target to build an object file
+JoystickOnex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.o
+.PHONY : JoystickOnex.cpp.o
+
+JoystickOnex.i: JoystickOnex.cpp.i
+.PHONY : JoystickOnex.i
+
+# target to preprocess a source file
+JoystickOnex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.i
+.PHONY : JoystickOnex.cpp.i
+
+JoystickOnex.s: JoystickOnex.cpp.s
+.PHONY : JoystickOnex.s
+
+# target to generate assembly for a file
+JoystickOnex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.s
+.PHONY : JoystickOnex.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... QtTCPClient"
+	@echo "... JoystickOnex.o"
+	@echo "... JoystickOnex.i"
+	@echo "... JoystickOnex.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

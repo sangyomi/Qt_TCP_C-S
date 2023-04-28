@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sangjun/CLionProjects/JOY_TCP/main.cpp" "CMakeFiles/JOY_TCP.dir/main.cpp.o" "gcc" "CMakeFiles/JOY_TCP.dir/main.cpp.o.d"
+  "/home/sangjun/QT_TCP/JOY_TCP/JoystickOnex.cpp" "CMakeFiles/JOY_TCP.dir/JoystickOnex.cpp.o" "gcc" "CMakeFiles/JOY_TCP.dir/JoystickOnex.cpp.o.d"
+  "/home/sangjun/QT_TCP/JOY_TCP/main.cpp" "CMakeFiles/JOY_TCP.dir/main.cpp.o" "gcc" "CMakeFiles/JOY_TCP.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

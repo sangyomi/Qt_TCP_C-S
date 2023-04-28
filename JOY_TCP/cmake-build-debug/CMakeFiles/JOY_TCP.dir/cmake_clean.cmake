@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/JOY_TCP.dir/JoystickOnex.cpp.o"
+  "CMakeFiles/JOY_TCP.dir/JoystickOnex.cpp.o.d"
   "CMakeFiles/JOY_TCP.dir/main.cpp.o"
   "CMakeFiles/JOY_TCP.dir/main.cpp.o.d"
   "JOY_TCP"

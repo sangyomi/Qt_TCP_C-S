@@ -1,6 +1,6 @@
-CMakeFiles/JOY_TCP.dir/main.cpp.o: /home/sangjun/QT_TCP/JOY_TCP/main.cpp \
- /usr/include/stdc-predef.h /home/sangjun/QT_TCP/JOY_TCP/JoystickOnex.h \
- /usr/include/c++/9/iostream \
+CMakeFiles/JOY_TCP.dir/JoystickOnex.cpp.o: \
+ /home/sangjun/QT_TCP/JOY_TCP/JoystickOnex.cpp /usr/include/stdc-predef.h \
+ /home/sangjun/QT_TCP/JOY_TCP/JoystickOnex.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \

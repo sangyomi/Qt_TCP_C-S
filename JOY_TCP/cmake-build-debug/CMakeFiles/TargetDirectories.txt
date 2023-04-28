@@ -1,3 +1,3 @@
-/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/CMakeFiles/JOY_TCP.dir
-/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/CMakeFiles/JOY_TCP.dir
+/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -2,6 +2,10 @@
 #include <QDataStream>
 #include <QCoreApplication>
 #include <QHostAddress>
+#include <iostream>
+#include "JoystickOnex.h"
+
+JoystickOnex Onex;
 
 void sendData()
 {
@@ -15,10 +19,16 @@ void sendData()
 
     if (socket->waitForConnected()) {
         // 보낼 데이터 생성
-        float number = 4212.2;
+
+        float axis[100];
+        std::copy(Onex.joy_axis.begin(), Onex.joy_axis.end(), axis);
+
+        float button[100];
+        std::copy(Onex.joy_button.begin(), Onex.joy_button.end(), button);
+
         QByteArray data;
         QDataStream dataStream(&data, QIODevice::WriteOnly);
-        dataStream << number;
+        dataStream << button[0] << axis[1] << axis[2] << axis[3] << axis[4] << axis[5] << axis[6] << axis[7];
 
         // 데이터 전송
         QByteArray requestData;
@@ -51,13 +61,13 @@ void sendData()
 
             // 데이터 처리
             QDataStream dataStream(&data, QIODevice::ReadOnly);
-            float number = 0;
-            dataStream >> number;
+            float number[100];
+            dataStream >> number[0] >> number[1] >> number[2] >> number[3] >> number[4] >> number[5]>> number[6] >> number[7];
 
             if (dataStream.status() != QDataStream::Ok) {
                 qWarning() << "Error while reading data: " << dataStream.status();
             } else {
-                qDebug() << "Received number: " << number;
+                qDebug() << "Received numbers: " << number[0] << ", " << number[1] << ", " << number[2] << ", " << number[3] << ", " << number[4] << ", " << number[5] << ", " << number[6] << ", " << number[7];
             }
             socket->disconnectFromHost();
             socket->deleteLater();
@@ -70,7 +80,16 @@ void sendData()
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
-    sendData();
-    return a.exec();
+//
+//    while (true)
+//    {
+
+//    }
+    while (true)
+    {
+        Onex.Read();
+        QCoreApplication a(argc, argv);
+        sendData();
+    }
+    return 0;
 }

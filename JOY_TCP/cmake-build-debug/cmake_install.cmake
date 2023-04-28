@@ -1,4 +1,4 @@
-# Install script for directory: /home/sangjun/CLionProjects/JOY_TCP
+# Install script for directory: /home/sangjun/QT_TCP/JOY_TCP
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

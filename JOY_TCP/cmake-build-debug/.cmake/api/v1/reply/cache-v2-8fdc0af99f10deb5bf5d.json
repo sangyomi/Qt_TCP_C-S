@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug"
+			"value" : "/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -151,7 +151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/233/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/snap/clion/234/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -163,7 +163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/233/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/snap/clion/234/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/233/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/snap/clion/234/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -627,7 +627,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -687,7 +687,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/sangjun/CLionProjects/JOY_TCP"
+			"value" : "/home/sangjun/QT_TCP/JOY_TCP"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -971,7 +971,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/233/bin/cmake/linux/x64/share/cmake-3.25"
+			"value" : "/snap/clion/234/bin/cmake/linux/x64/share/cmake-3.25"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1219,7 +1219,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/sangjun/CLionProjects/JOY_TCP/cmake-build-debug"
+			"value" : "/home/sangjun/QT_TCP/JOY_TCP/cmake-build-debug"
 		},
 		{
 			"name" : "JOY_TCP_IS_TOP_LEVEL",
@@ -1243,7 +1243,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/sangjun/CLionProjects/JOY_TCP"
+			"value" : "/home/sangjun/QT_TCP/JOY_TCP"
 		},
 		{
 			"name" : "ProcessorCount_cmd_nproc",
