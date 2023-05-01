@@ -29,7 +29,6 @@ public:
     bool Open();
     void Close();
     bool Read();
-    void Set();
 };
 
 

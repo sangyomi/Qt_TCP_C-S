@@ -37,8 +37,8 @@ bool JoystickOnex::Open()
         joy_button.resize(num_of_buttons,0);
         joy_axis.resize(num_of_axis,0);
         std::cout<<"Joystick: "<<name_of_joystick<<std::endl;
-        std::cout<<"  axis: "<<num_of_axis<<std::endl;
-        std::cout<<"  buttons: "<<num_of_buttons<<std::endl;
+        std::cout<<"axis: "<<num_of_axis<<std::endl;
+        std::cout<<"buttons: "<<num_of_buttons<<std::endl;
         fcntl(joy_fd, F_SETFL, O_NONBLOCK);
         return 0;
     }
@@ -70,10 +70,7 @@ bool JoystickOnex::Read()
 
     std::cout<<"axis/10000: ";
     for(size_t i(0);i<joy_axis.size();++i)
-    {
         cout<<" "<<setw(2)<<joy_axis[i]/10000;
-        joy_axis[i] = joy_axis[i]/10000;
-    }
     std::cout<<std::endl;
 
     std::cout<<"  button: ";

@@ -2,6 +2,7 @@
 #include <QTcpSocket>
 #include <QDataStream>
 #include <QCoreApplication>
+#include <iostream>
 
 void startServer()
 {
@@ -37,34 +38,18 @@ void startServer()
 
                 // 데이터 처리
                 QDataStream dataStream(&data, QIODevice::ReadOnly);
-
-                QVector<float> axisVector;
-                QVector<float> buttonVector;
-                int count = 0;
-
-                while (!dataStream.atEnd())
-                {
-                    float value;
-                    dataStream >> value;
-                    if (count < 8)
-                    {
-                        axisVector.append(value);
-                    }
-                    else
-                    {
-                        buttonVector.append(value);
-                    }
-                    count++;
-                }
+                float number[100];
+                dataStream >> number[0] >> number[1] >> number[2] >> number[3] >> number[4] >> number[5]>> number[6] >> number[7];
 
                 if (dataStream.status() != QDataStream::Ok) {
                     qWarning() << "Error while reading data: " << dataStream.status();
                 }
                 else
                 {
-                    qDebug() << "axisVector" << axisVector;
-                    qDebug() << "buttonVector" << buttonVector;
+                    qDebug() << "Received numbers: " << number[0] << ", " << number[1] << ", " << number[2] << ", " << number[3] << ", " << number[4] << ", " << number[5] << ", " << number[6] << ", " << number[7];
                 }
+                socket->disconnectFromHost();
+                socket->deleteLater();
 
                 // 응답 전송
                 QByteArray requestData;
@@ -84,6 +69,11 @@ void startServer()
         }
     }
 }
+
+
+
+
+
 
 int main(int argc, char *argv[])
 {

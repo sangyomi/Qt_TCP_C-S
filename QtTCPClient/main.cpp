@@ -9,6 +9,8 @@ JoystickOnex Onex;
 
 void sendData()
 {
+    Onex.Read();
+
     // 서버 IP 주소 및 포트 설정
     const QHostAddress serverAddress("192.168.0.124");
     const quint16 serverPort = 12345;
@@ -20,15 +22,31 @@ void sendData()
     if (socket->waitForConnected()) {
         // 보낼 데이터 생성
 
-        float axis[100];
-        std::copy(Onex.joy_axis.begin(), Onex.joy_axis.end(), axis);
+        QVector<float> axisVector;
+        QVector<float> buttonVector;
 
-        float button[100];
-        std::copy(Onex.joy_button.begin(), Onex.joy_button.end(), button);
+        for (int value: Onex.joy_axis)
+        {
+            axisVector.append(static_cast<float>(value));
+        }
+
+        for (char value: Onex.joy_button)
+        {
+            buttonVector.append(static_cast<float>(value));
+        }
 
         QByteArray data;
         QDataStream dataStream(&data, QIODevice::WriteOnly);
-        dataStream << button[0] << axis[1] << axis[2] << axis[3] << axis[4] << axis[5] << axis[6] << axis[7];
+
+        foreach (float value, axisVector)
+        {
+            dataStream << value;
+        }
+
+        foreach (float value, buttonVector)
+        {
+            dataStream << value;
+        }
 
         // 데이터 전송
         QByteArray requestData;
@@ -61,14 +79,35 @@ void sendData()
 
             // 데이터 처리
             QDataStream dataStream(&data, QIODevice::ReadOnly);
-            float number[100];
-            dataStream >> number[0] >> number[1] >> number[2] >> number[3] >> number[4] >> number[5]>> number[6] >> number[7];
+
+            QVector<float> axisVector;
+            QVector<float> buttonVector;
+            int count = 0;
+
+            while (!dataStream.atEnd())
+            {
+                float value;
+                dataStream >> value;
+                if (count < 8)
+                {
+                    axisVector.append(value);
+                }
+                else
+                {
+                    buttonVector.append(value);
+                }
+                count++;
+            }
 
             if (dataStream.status() != QDataStream::Ok) {
                 qWarning() << "Error while reading data: " << dataStream.status();
-            } else {
-                qDebug() << "Received numbers: " << number[0] << ", " << number[1] << ", " << number[2] << ", " << number[3] << ", " << number[4] << ", " << number[5] << ", " << number[6] << ", " << number[7];
             }
+            else
+            {
+                qDebug() << "axisVector" << axisVector;
+                qDebug() << "buttonVector" << buttonVector;
+            }
+
             socket->disconnectFromHost();
             socket->deleteLater();
         }
@@ -80,14 +119,8 @@ void sendData()
 
 int main(int argc, char *argv[])
 {
-//
-//    while (true)
-//    {
-
-//    }
     while (true)
     {
-        Onex.Read();
         QCoreApplication a(argc, argv);
         sendData();
     }

@@ -1,4 +1,4 @@
-/snap/clion/234/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" -S /home/sangjun/QT_TCP/QtTCP -B /home/sangjun/QT_TCP/QtTCP/cmake-build-debug
+/snap/clion/235/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -G "CodeBlocks - Unix Makefiles" -S /home/sangjun/QT_TCP/QtTCP -B /home/sangjun/QT_TCP/QtTCP/cmake-build-debug
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/sangjun/QT_TCP/QtTCP/cmake-build-debug
