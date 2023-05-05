@@ -59,93 +59,99 @@ void serializeJoystickInfo(QDataStream &stream) {
     stream << joystickButton->RightStick;
 }
 
-void sendData()
+void* sendData(void* arg)
 {
-    // 서버 IP 주소 및 포트 설정
-    const QHostAddress serverAddress("192.168.0.124");
-    const quint16 serverPort = 12345;
+    while (1)
+    {
+        Onex.Read();
+        transJoystick();
 
-    // 서버에 연결
-    QTcpSocket* socket = new QTcpSocket();
-    socket->connectToHost(serverAddress, serverPort);
+        // 서버 IP 주소 및 포트 설정
+        const QHostAddress serverAddress("192.168.0.124");
+        const quint16 serverPort = 12345;
 
-    if (socket->waitForConnected()) {
-        // 보낼 데이터 생성
+        // 서버에 연결
+        QTcpSocket* socket = new QTcpSocket();
+        socket->connectToHost(serverAddress, serverPort);
 
-        QByteArray byteArray;
-        QDataStream stream(&byteArray, QIODevice::WriteOnly);
+        if (socket->waitForConnected()) {
+            // 보낼 데이터 생성
 
-        serializeJoystickInfo(stream);
+            QByteArray byteArray;
+            QDataStream stream(&byteArray, QIODevice::WriteOnly);
 
-        // 데이터 전송
-        QByteArray requestData;
-        QDataStream out(&requestData, QIODevice::WriteOnly);
-        out << (qint64)0;
-        out.device()->seek(0);
-        out << (qint64)byteArray.size();
+            serializeJoystickInfo(stream);
 
-        socket->write(requestData);
-        socket->write(byteArray);
-        socket->flush();
+            // 데이터 전송
+            QByteArray requestData;
+            QDataStream out(&requestData, QIODevice::WriteOnly);
+            out << (qint64)0;
+            out.device()->seek(0);
+            out << (qint64)byteArray.size();
 
-        // 응답 수신
-        if (socket->waitForReadyRead()) {
-            // 데이터 수신
-            QDataStream in(socket);
-            in.setVersion(QDataStream::Qt_5_0);
+            socket->write(requestData);
+            socket->write(byteArray);
+            socket->flush();
 
-            qint64 blockSize = 0;
-            if (socket->bytesAvailable() < sizeof(qint64)) {
-                socket->waitForReadyRead();
-            }
-            in >> blockSize;
+            // 응답 수신
+            if (socket->waitForReadyRead()) {
+                // 데이터 수신
+                QDataStream in(socket);
+                in.setVersion(QDataStream::Qt_5_0);
 
-            QByteArray data;
-            while (socket->bytesAvailable() < blockSize) {
-                socket->waitForReadyRead();
-            }
-            data = socket->read(blockSize);
+                qint64 blockSize = 0;
+                if (socket->bytesAvailable() < sizeof(qint64)) {
+                    socket->waitForReadyRead();
+                }
+                in >> blockSize;
 
-            // 데이터 처리
-            QDataStream dataStream(&data, QIODevice::ReadOnly);
+                QByteArray data;
+                while (socket->bytesAvailable() < blockSize) {
+                    socket->waitForReadyRead();
+                }
+                data = socket->read(blockSize);
 
-            QVector<float> axisVector;
-            QVector<float> buttonVector;
-            int count = 0;
+                // 데이터 처리
+                QDataStream dataStream(&data, QIODevice::ReadOnly);
 
-            while (!dataStream.atEnd())
-            {
-                float value;
-                dataStream >> value;
-                if (count < 8)
+                QVector<float> axisVector;
+                QVector<float> buttonVector;
+                int count = 0;
+
+                while (!dataStream.atEnd())
                 {
-                    axisVector.append(value);
+                    float value;
+                    dataStream >> value;
+                    if (count < 8)
+                    {
+                        axisVector.append(value);
+                    }
+                    else
+                    {
+                        buttonVector.append(value);
+                    }
+                    count++;
+                }
+
+                if (dataStream.status() != QDataStream::Ok) {
+                    qWarning() << "Error while reading data: " << dataStream.status();
                 }
                 else
                 {
-                    buttonVector.append(value);
+                    qDebug() << "axisVector" << axisVector;
+                    qDebug() << "buttonVector" << buttonVector;
                 }
-                count++;
-            }
 
-            if (dataStream.status() != QDataStream::Ok) {
-                qWarning() << "Error while reading data: " << dataStream.status();
+                socket->disconnectFromHost();
+                socket->deleteLater();
             }
-            else
-            {
-                qDebug() << "axisVector" << axisVector;
-                qDebug() << "buttonVector" << buttonVector;
-            }
-
-            socket->disconnectFromHost();
-            socket->deleteLater();
+        } else {
+            qWarning() << "Could not connect to server: " << socket->errorString();
         }
-    } else {
-        qWarning() << "Could not connect to server: " << socket->errorString();
     }
 }
 
-void receiveData()
+void* receiveData(void* arg)
 {
     // 서버 IP 주소 및 포트 설정
     const QHostAddress serverAddress(QHostAddress::Any);
@@ -232,14 +238,9 @@ void StartSendData()
     joystickAxis = (pAXIS)malloc(sizeof(AXIS));
     joystickButton = (pBUTTON)malloc(sizeof(BUTTON));
 
-//    int thread_id_rt1 = generate_rt_thread(QtClient, sendData, "rt_thread1", 1, 99, NULL);
-
-    while(1)
-    {
-        Onex.Read();
-        transJoystick();
-        sendData();
-        //receiveData();
-    }
+    pthread_create(&QtClient,NULL,sendData,NULL);
+    pthread_create(&QtServer,NULL,receiveData,NULL);
+    pthread_join(QtClient,NULL);
+    pthread_join(QtServer,NULL);
 }
 
