@@ -3,14 +3,6 @@
 //
 
 #include "JoystickOnex.h"
-#include <iostream>
-#include <iomanip>
-#include <vector>
-#include <cstdio>
-#include <fcntl.h>
-#include <unistd.h>
-#include <sys/ioctl.h>
-#include <linux/joystick.h>
 
 #define JOY_DEV "/dev/input/js0"
 

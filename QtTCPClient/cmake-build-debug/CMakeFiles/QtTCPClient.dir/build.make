@@ -97,23 +97,71 @@ CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sangjun/QT_TCP/QtTCPClient/JoystickOnex.cpp -o CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.s
 
+CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.o: CMakeFiles/QtTCPClient.dir/flags.make
+CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.o: /home/sangjun/QT_TCP/QtTCPClient/QtTCPClient.cpp
+CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.o: CMakeFiles/QtTCPClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sangjun/QT_TCP/QtTCPClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.o -MF CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.o.d -o CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.o -c /home/sangjun/QT_TCP/QtTCPClient/QtTCPClient.cpp
+
+CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sangjun/QT_TCP/QtTCPClient/QtTCPClient.cpp > CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.i
+
+CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sangjun/QT_TCP/QtTCPClient/QtTCPClient.cpp -o CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.s
+
+CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.o: CMakeFiles/QtTCPClient.dir/flags.make
+CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.o: /home/sangjun/QT_TCP/QtTCPClient/ServeStructure.cpp
+CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.o: CMakeFiles/QtTCPClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sangjun/QT_TCP/QtTCPClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.o -MF CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.o.d -o CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.o -c /home/sangjun/QT_TCP/QtTCPClient/ServeStructure.cpp
+
+CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sangjun/QT_TCP/QtTCPClient/ServeStructure.cpp > CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.i
+
+CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sangjun/QT_TCP/QtTCPClient/ServeStructure.cpp -o CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.s
+
+CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.o: CMakeFiles/QtTCPClient.dir/flags.make
+CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.o: /home/sangjun/QT_TCP/QtTCPClient/ThreadGenerator.cpp
+CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.o: CMakeFiles/QtTCPClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sangjun/QT_TCP/QtTCPClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.o -MF CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.o.d -o CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.o -c /home/sangjun/QT_TCP/QtTCPClient/ThreadGenerator.cpp
+
+CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sangjun/QT_TCP/QtTCPClient/ThreadGenerator.cpp > CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.i
+
+CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sangjun/QT_TCP/QtTCPClient/ThreadGenerator.cpp -o CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.s
+
 # Object files for target QtTCPClient
 QtTCPClient_OBJECTS = \
 "CMakeFiles/QtTCPClient.dir/main.cpp.o" \
-"CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.o"
+"CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.o" \
+"CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.o" \
+"CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.o" \
+"CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.o"
 
 # External object files for target QtTCPClient
 QtTCPClient_EXTERNAL_OBJECTS =
 
 QtTCPClient: CMakeFiles/QtTCPClient.dir/main.cpp.o
 QtTCPClient: CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.o
+QtTCPClient: CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.o
+QtTCPClient: CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.o
+QtTCPClient: CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.o
 QtTCPClient: CMakeFiles/QtTCPClient.dir/build.make
 QtTCPClient: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
 QtTCPClient: /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.12.8
 QtTCPClient: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
 QtTCPClient: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
 QtTCPClient: CMakeFiles/QtTCPClient.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sangjun/QT_TCP/QtTCPClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable QtTCPClient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sangjun/QT_TCP/QtTCPClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable QtTCPClient"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/QtTCPClient.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

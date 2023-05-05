@@ -153,6 +153,78 @@ JoystickOnex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.s
 .PHONY : JoystickOnex.cpp.s
 
+QtTCPClient.o: QtTCPClient.cpp.o
+.PHONY : QtTCPClient.o
+
+# target to build an object file
+QtTCPClient.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.o
+.PHONY : QtTCPClient.cpp.o
+
+QtTCPClient.i: QtTCPClient.cpp.i
+.PHONY : QtTCPClient.i
+
+# target to preprocess a source file
+QtTCPClient.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.i
+.PHONY : QtTCPClient.cpp.i
+
+QtTCPClient.s: QtTCPClient.cpp.s
+.PHONY : QtTCPClient.s
+
+# target to generate assembly for a file
+QtTCPClient.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.s
+.PHONY : QtTCPClient.cpp.s
+
+ServeStructure.o: ServeStructure.cpp.o
+.PHONY : ServeStructure.o
+
+# target to build an object file
+ServeStructure.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.o
+.PHONY : ServeStructure.cpp.o
+
+ServeStructure.i: ServeStructure.cpp.i
+.PHONY : ServeStructure.i
+
+# target to preprocess a source file
+ServeStructure.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.i
+.PHONY : ServeStructure.cpp.i
+
+ServeStructure.s: ServeStructure.cpp.s
+.PHONY : ServeStructure.s
+
+# target to generate assembly for a file
+ServeStructure.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.s
+.PHONY : ServeStructure.cpp.s
+
+ThreadGenerator.o: ThreadGenerator.cpp.o
+.PHONY : ThreadGenerator.o
+
+# target to build an object file
+ThreadGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.o
+.PHONY : ThreadGenerator.cpp.o
+
+ThreadGenerator.i: ThreadGenerator.cpp.i
+.PHONY : ThreadGenerator.i
+
+# target to preprocess a source file
+ThreadGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.i
+.PHONY : ThreadGenerator.cpp.i
+
+ThreadGenerator.s: ThreadGenerator.cpp.s
+.PHONY : ThreadGenerator.s
+
+# target to generate assembly for a file
+ThreadGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.s
+.PHONY : ThreadGenerator.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -189,6 +261,15 @@ help:
 	@echo "... JoystickOnex.o"
 	@echo "... JoystickOnex.i"
 	@echo "... JoystickOnex.s"
+	@echo "... QtTCPClient.o"
+	@echo "... QtTCPClient.i"
+	@echo "... QtTCPClient.s"
+	@echo "... ServeStructure.o"
+	@echo "... ServeStructure.i"
+	@echo "... ServeStructure.s"
+	@echo "... ThreadGenerator.o"
+	@echo "... ThreadGenerator.i"
+	@echo "... ThreadGenerator.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

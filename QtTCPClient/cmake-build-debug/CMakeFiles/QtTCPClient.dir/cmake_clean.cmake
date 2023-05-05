@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.o"
   "CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.o.d"
+  "CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.o"
+  "CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.o.d"
+  "CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.o"
+  "CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.o.d"
+  "CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.o"
+  "CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.o.d"
   "CMakeFiles/QtTCPClient.dir/main.cpp.o"
   "CMakeFiles/QtTCPClient.dir/main.cpp.o.d"
   "QtTCPClient"

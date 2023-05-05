@@ -253,6 +253,9 @@ QtTCPClient_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 QtTCPClient_SOURCE_DIR:STATIC=/home/sangjun/QT_TCP/QtTCPClient
 
+//The directory containing a CMake configuration file for camel-tools-thread.
+camel-tools-thread_DIR:PATH=/usr/local/share/camel-tools-thread
+
 
 ########################
 # INTERNAL cache entries

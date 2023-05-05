@@ -1348,6 +1348,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "TRUE"
+		},
+		{
+			"name" : "camel-tools-thread_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for camel-tools-thread."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/local/share/camel-tools-thread"
 		}
 	],
 	"kind" : "cache",
