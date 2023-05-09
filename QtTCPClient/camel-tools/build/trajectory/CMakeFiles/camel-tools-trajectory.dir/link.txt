@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -shared -Wl,-soname,libcamel-tools-trajectory.so -o libcamel-tools-trajectory.so CMakeFiles/camel-tools-trajectory.dir/src/CubicTrajectoryGenerator.cpp.o CMakeFiles/camel-tools-trajectory.dir/src/QuinticTrajectoryGenerator.cpp.o CMakeFiles/camel-tools-trajectory.dir/src/SineTrajectoryGenerator.cpp.o 

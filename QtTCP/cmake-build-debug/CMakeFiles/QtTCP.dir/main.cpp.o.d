@@ -1,5 +1,6 @@
 CMakeFiles/QtTCP.dir/main.cpp.o: /home/sangjun/QT_TCP/QtTCP/main.cpp \
  /usr/include/stdc-predef.h \
+ /home/sangjun/QT_TCP/QtTCP/TcpCommunication.hpp \
  /usr/include/x86_64-linux-gnu/qt5/QtNetwork/QTcpServer \
  /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtcpserver.h \
  /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h \

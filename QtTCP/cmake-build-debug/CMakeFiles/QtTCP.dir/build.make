@@ -69,44 +69,44 @@ include CMakeFiles/QtTCP.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/QtTCP.dir/flags.make
 
-CMakeFiles/QtTCP.dir/main.cpp.o: CMakeFiles/QtTCP.dir/flags.make
-CMakeFiles/QtTCP.dir/main.cpp.o: /home/sangjun/QT_TCP/QtTCP/main.cpp
-CMakeFiles/QtTCP.dir/main.cpp.o: CMakeFiles/QtTCP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sangjun/QT_TCP/QtTCP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/QtTCP.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QtTCP.dir/main.cpp.o -MF CMakeFiles/QtTCP.dir/main.cpp.o.d -o CMakeFiles/QtTCP.dir/main.cpp.o -c /home/sangjun/QT_TCP/QtTCP/main.cpp
+CMakeFiles/QtTCP.dir/src/main.cpp.o: CMakeFiles/QtTCP.dir/flags.make
+CMakeFiles/QtTCP.dir/src/main.cpp.o: /home/sangjun/QT_TCP/QtTCP/src/main.cpp
+CMakeFiles/QtTCP.dir/src/main.cpp.o: CMakeFiles/QtTCP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sangjun/QT_TCP/QtTCP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/QtTCP.dir/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QtTCP.dir/src/main.cpp.o -MF CMakeFiles/QtTCP.dir/src/main.cpp.o.d -o CMakeFiles/QtTCP.dir/src/main.cpp.o -c /home/sangjun/QT_TCP/QtTCP/src/main.cpp
 
-CMakeFiles/QtTCP.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtTCP.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sangjun/QT_TCP/QtTCP/main.cpp > CMakeFiles/QtTCP.dir/main.cpp.i
+CMakeFiles/QtTCP.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtTCP.dir/src/main.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sangjun/QT_TCP/QtTCP/src/main.cpp > CMakeFiles/QtTCP.dir/src/main.cpp.i
 
-CMakeFiles/QtTCP.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtTCP.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sangjun/QT_TCP/QtTCP/main.cpp -o CMakeFiles/QtTCP.dir/main.cpp.s
+CMakeFiles/QtTCP.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtTCP.dir/src/main.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sangjun/QT_TCP/QtTCP/src/main.cpp -o CMakeFiles/QtTCP.dir/src/main.cpp.s
 
-CMakeFiles/QtTCP.dir/ServeStructure.cpp.o: CMakeFiles/QtTCP.dir/flags.make
-CMakeFiles/QtTCP.dir/ServeStructure.cpp.o: /home/sangjun/QT_TCP/QtTCP/ServeStructure.cpp
-CMakeFiles/QtTCP.dir/ServeStructure.cpp.o: CMakeFiles/QtTCP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sangjun/QT_TCP/QtTCP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/QtTCP.dir/ServeStructure.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QtTCP.dir/ServeStructure.cpp.o -MF CMakeFiles/QtTCP.dir/ServeStructure.cpp.o.d -o CMakeFiles/QtTCP.dir/ServeStructure.cpp.o -c /home/sangjun/QT_TCP/QtTCP/ServeStructure.cpp
+CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.o: CMakeFiles/QtTCP.dir/flags.make
+CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.o: /home/sangjun/QT_TCP/QtTCP/src/TcpCommunication.cpp
+CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.o: CMakeFiles/QtTCP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sangjun/QT_TCP/QtTCP/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.o -MF CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.o.d -o CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.o -c /home/sangjun/QT_TCP/QtTCP/src/TcpCommunication.cpp
 
-CMakeFiles/QtTCP.dir/ServeStructure.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtTCP.dir/ServeStructure.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sangjun/QT_TCP/QtTCP/ServeStructure.cpp > CMakeFiles/QtTCP.dir/ServeStructure.cpp.i
+CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sangjun/QT_TCP/QtTCP/src/TcpCommunication.cpp > CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.i
 
-CMakeFiles/QtTCP.dir/ServeStructure.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtTCP.dir/ServeStructure.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sangjun/QT_TCP/QtTCP/ServeStructure.cpp -o CMakeFiles/QtTCP.dir/ServeStructure.cpp.s
+CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sangjun/QT_TCP/QtTCP/src/TcpCommunication.cpp -o CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.s
 
 # Object files for target QtTCP
 QtTCP_OBJECTS = \
-"CMakeFiles/QtTCP.dir/main.cpp.o" \
-"CMakeFiles/QtTCP.dir/ServeStructure.cpp.o"
+"CMakeFiles/QtTCP.dir/src/main.cpp.o" \
+"CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.o"
 
 # External object files for target QtTCP
 QtTCP_EXTERNAL_OBJECTS =
 
-QtTCP: CMakeFiles/QtTCP.dir/main.cpp.o
-QtTCP: CMakeFiles/QtTCP.dir/ServeStructure.cpp.o
+QtTCP: CMakeFiles/QtTCP.dir/src/main.cpp.o
+QtTCP: CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.o
 QtTCP: CMakeFiles/QtTCP.dir/build.make
 QtTCP: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
 QtTCP: /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.12.8

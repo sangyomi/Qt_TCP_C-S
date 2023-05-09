@@ -129,53 +129,53 @@ QtTCP/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/build
 .PHONY : QtTCP/fast
 
-ServeStructure.o: ServeStructure.cpp.o
-.PHONY : ServeStructure.o
+src/TcpCommunication.o: src/TcpCommunication.cpp.o
+.PHONY : src/TcpCommunication.o
 
 # target to build an object file
-ServeStructure.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/ServeStructure.cpp.o
-.PHONY : ServeStructure.cpp.o
+src/TcpCommunication.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.o
+.PHONY : src/TcpCommunication.cpp.o
 
-ServeStructure.i: ServeStructure.cpp.i
-.PHONY : ServeStructure.i
+src/TcpCommunication.i: src/TcpCommunication.cpp.i
+.PHONY : src/TcpCommunication.i
 
 # target to preprocess a source file
-ServeStructure.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/ServeStructure.cpp.i
-.PHONY : ServeStructure.cpp.i
+src/TcpCommunication.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.i
+.PHONY : src/TcpCommunication.cpp.i
 
-ServeStructure.s: ServeStructure.cpp.s
-.PHONY : ServeStructure.s
+src/TcpCommunication.s: src/TcpCommunication.cpp.s
+.PHONY : src/TcpCommunication.s
 
 # target to generate assembly for a file
-ServeStructure.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/ServeStructure.cpp.s
-.PHONY : ServeStructure.cpp.s
+src/TcpCommunication.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/src/TcpCommunication.cpp.s
+.PHONY : src/TcpCommunication.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... QtTCP"
-	@echo "... ServeStructure.o"
-	@echo "... ServeStructure.i"
-	@echo "... ServeStructure.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/TcpCommunication.o"
+	@echo "... src/TcpCommunication.i"
+	@echo "... src/TcpCommunication.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

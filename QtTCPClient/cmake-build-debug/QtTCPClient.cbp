@@ -102,28 +102,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/JoystickOnex.cpp">
+		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/src/JoystickOnex.cpp">
 			<Option target="QtTCPClient"/>
 		</Unit>
-		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/JoystickOnex.h">
+		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/src/TcpCommunication.cpp">
 			<Option target="QtTCPClient"/>
 		</Unit>
-		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/QtTCPClient.cpp">
-			<Option target="QtTCPClient"/>
-		</Unit>
-		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/QtTCPClient.h">
-			<Option target="QtTCPClient"/>
-		</Unit>
-		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/ServeStructure.cpp">
-			<Option target="QtTCPClient"/>
-		</Unit>
-		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/ThreadGenerator.cpp">
-			<Option target="QtTCPClient"/>
-		</Unit>
-		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/ThreadGenerator.hpp">
-			<Option target="QtTCPClient"/>
-		</Unit>
-		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/main.cpp">
+		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/src/main.cpp">
 			<Option target="QtTCPClient"/>
 		</Unit>
 		<Unit filename="/home/sangjun/QT_TCP/QtTCPClient/CMakeLists.txt">

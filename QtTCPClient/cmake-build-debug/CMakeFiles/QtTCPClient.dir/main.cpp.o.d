@@ -136,7 +136,7 @@ CMakeFiles/QtTCPClient.dir/main.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /home/sangjun/QT_TCP/QtTCPClient/QtTCPClient.h \
+ /home/sangjun/QT_TCP/QtTCPClient/TcpCommunication.hpp \
  /usr/include/x86_64-linux-gnu/qt5/QtNetwork/QTcpServer \
  /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtcpserver.h \
  /usr/include/x86_64-linux-gnu/qt5/QtNetwork/qtnetworkglobal.h \
@@ -712,5 +712,4 @@ CMakeFiles/QtTCPClient.dir/main.cpp.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /home/sangjun/QT_TCP/QtTCPClient/JoystickInfo.hpp \
- /home/sangjun/QT_TCP/QtTCPClient/ThreadGenerator.hpp
+ /home/sangjun/QT_TCP/QtTCPClient/JoystickInfo.hpp

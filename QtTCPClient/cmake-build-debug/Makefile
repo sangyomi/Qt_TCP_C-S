@@ -129,125 +129,77 @@ QtTCPClient/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/build
 .PHONY : QtTCPClient/fast
 
-JoystickOnex.o: JoystickOnex.cpp.o
-.PHONY : JoystickOnex.o
+src/JoystickOnex.o: src/JoystickOnex.cpp.o
+.PHONY : src/JoystickOnex.o
 
 # target to build an object file
-JoystickOnex.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.o
-.PHONY : JoystickOnex.cpp.o
+src/JoystickOnex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/src/JoystickOnex.cpp.o
+.PHONY : src/JoystickOnex.cpp.o
 
-JoystickOnex.i: JoystickOnex.cpp.i
-.PHONY : JoystickOnex.i
+src/JoystickOnex.i: src/JoystickOnex.cpp.i
+.PHONY : src/JoystickOnex.i
 
 # target to preprocess a source file
-JoystickOnex.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.i
-.PHONY : JoystickOnex.cpp.i
+src/JoystickOnex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/src/JoystickOnex.cpp.i
+.PHONY : src/JoystickOnex.cpp.i
 
-JoystickOnex.s: JoystickOnex.cpp.s
-.PHONY : JoystickOnex.s
+src/JoystickOnex.s: src/JoystickOnex.cpp.s
+.PHONY : src/JoystickOnex.s
 
 # target to generate assembly for a file
-JoystickOnex.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/JoystickOnex.cpp.s
-.PHONY : JoystickOnex.cpp.s
+src/JoystickOnex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/src/JoystickOnex.cpp.s
+.PHONY : src/JoystickOnex.cpp.s
 
-QtTCPClient.o: QtTCPClient.cpp.o
-.PHONY : QtTCPClient.o
+src/TcpCommunication.o: src/TcpCommunication.cpp.o
+.PHONY : src/TcpCommunication.o
 
 # target to build an object file
-QtTCPClient.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.o
-.PHONY : QtTCPClient.cpp.o
+src/TcpCommunication.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/src/TcpCommunication.cpp.o
+.PHONY : src/TcpCommunication.cpp.o
 
-QtTCPClient.i: QtTCPClient.cpp.i
-.PHONY : QtTCPClient.i
+src/TcpCommunication.i: src/TcpCommunication.cpp.i
+.PHONY : src/TcpCommunication.i
 
 # target to preprocess a source file
-QtTCPClient.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.i
-.PHONY : QtTCPClient.cpp.i
+src/TcpCommunication.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/src/TcpCommunication.cpp.i
+.PHONY : src/TcpCommunication.cpp.i
 
-QtTCPClient.s: QtTCPClient.cpp.s
-.PHONY : QtTCPClient.s
+src/TcpCommunication.s: src/TcpCommunication.cpp.s
+.PHONY : src/TcpCommunication.s
 
 # target to generate assembly for a file
-QtTCPClient.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/QtTCPClient.cpp.s
-.PHONY : QtTCPClient.cpp.s
+src/TcpCommunication.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/src/TcpCommunication.cpp.s
+.PHONY : src/TcpCommunication.cpp.s
 
-ServeStructure.o: ServeStructure.cpp.o
-.PHONY : ServeStructure.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-ServeStructure.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.o
-.PHONY : ServeStructure.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-ServeStructure.i: ServeStructure.cpp.i
-.PHONY : ServeStructure.i
-
-# target to preprocess a source file
-ServeStructure.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.i
-.PHONY : ServeStructure.cpp.i
-
-ServeStructure.s: ServeStructure.cpp.s
-.PHONY : ServeStructure.s
-
-# target to generate assembly for a file
-ServeStructure.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/ServeStructure.cpp.s
-.PHONY : ServeStructure.cpp.s
-
-ThreadGenerator.o: ThreadGenerator.cpp.o
-.PHONY : ThreadGenerator.o
-
-# target to build an object file
-ThreadGenerator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.o
-.PHONY : ThreadGenerator.cpp.o
-
-ThreadGenerator.i: ThreadGenerator.cpp.i
-.PHONY : ThreadGenerator.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-ThreadGenerator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.i
-.PHONY : ThreadGenerator.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-ThreadGenerator.s: ThreadGenerator.cpp.s
-.PHONY : ThreadGenerator.s
-
-# target to generate assembly for a file
-ThreadGenerator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/ThreadGenerator.cpp.s
-.PHONY : ThreadGenerator.cpp.s
-
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCPClient.dir/build.make CMakeFiles/QtTCPClient.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -258,21 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... QtTCPClient"
-	@echo "... JoystickOnex.o"
-	@echo "... JoystickOnex.i"
-	@echo "... JoystickOnex.s"
-	@echo "... QtTCPClient.o"
-	@echo "... QtTCPClient.i"
-	@echo "... QtTCPClient.s"
-	@echo "... ServeStructure.o"
-	@echo "... ServeStructure.i"
-	@echo "... ServeStructure.s"
-	@echo "... ThreadGenerator.o"
-	@echo "... ThreadGenerator.i"
-	@echo "... ThreadGenerator.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/JoystickOnex.o"
+	@echo "... src/JoystickOnex.i"
+	@echo "... src/JoystickOnex.s"
+	@echo "... src/TcpCommunication.o"
+	@echo "... src/TcpCommunication.i"
+	@echo "... src/TcpCommunication.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
