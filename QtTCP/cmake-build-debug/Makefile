@@ -129,6 +129,30 @@ QtTCP/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/build
 .PHONY : QtTCP/fast
 
+ServeStructure.o: ServeStructure.cpp.o
+.PHONY : ServeStructure.o
+
+# target to build an object file
+ServeStructure.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/ServeStructure.cpp.o
+.PHONY : ServeStructure.cpp.o
+
+ServeStructure.i: ServeStructure.cpp.i
+.PHONY : ServeStructure.i
+
+# target to preprocess a source file
+ServeStructure.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/ServeStructure.cpp.i
+.PHONY : ServeStructure.cpp.i
+
+ServeStructure.s: ServeStructure.cpp.s
+.PHONY : ServeStructure.s
+
+# target to generate assembly for a file
+ServeStructure.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QtTCP.dir/build.make CMakeFiles/QtTCP.dir/ServeStructure.cpp.s
+.PHONY : ServeStructure.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... QtTCP"
+	@echo "... ServeStructure.o"
+	@echo "... ServeStructure.i"
+	@echo "... ServeStructure.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

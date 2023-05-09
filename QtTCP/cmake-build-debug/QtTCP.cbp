@@ -102,6 +102,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/sangjun/QT_TCP/QtTCP/ServeStructure.cpp">
+			<Option target="QtTCP"/>
+		</Unit>
 		<Unit filename="/home/sangjun/QT_TCP/QtTCP/main.cpp">
 			<Option target="QtTCP"/>
 		</Unit>

@@ -10,6 +10,7 @@
 #include <QDataStream>
 #include <QCoreApplication>
 #include <QHostAddress>
+#include <QtCore>
 #include <pthread.h>
 #include "JoystickOnex.h"
 #include "SharedMemory.hpp"
@@ -18,7 +19,10 @@
 #include "ThreadGenerator.hpp"
 
 void StartSendData();
-void sendData();
-void receiveData();
+void* sendData(void* arg);
+void* receiveData(void* arg);
+void transJoystick();
+void serializeJoystickInfo(QDataStream &stream);
+void deserializeSharedMemoryInfo (QDataStream &stream);
 
 #endif //QTTCPCLIENT_QTTCPCLIENT_H

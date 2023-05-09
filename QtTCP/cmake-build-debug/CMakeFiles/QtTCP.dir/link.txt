@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/QtTCP.dir/main.cpp.o -o QtTCP  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8 /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.12.8 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8 
+/usr/bin/g++ -g CMakeFiles/QtTCP.dir/main.cpp.o CMakeFiles/QtTCP.dir/ServeStructure.cpp.o -o QtTCP  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8 /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.12.8 -lpthread /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8 

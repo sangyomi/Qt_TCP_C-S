@@ -2,30 +2,109 @@
 #include <QTcpSocket>
 #include <QDataStream>
 #include <QCoreApplication>
+#include <QtCore>
 #include <pthread.h>
 #include "RobotDescription.hpp"
 #include "SharedMemory.hpp"
+#include "JoystickInfo.hpp"
+#include "EigenTypes.hpp"
+
+extern pAXIS joystickAxis;
+extern pBUTTON joystickButton;
+extern pUI_COMMAND sharedCommand;
+extern pSHM sharedMemory;
+extern pCUSTOM_DATA sharedCustom;
 
 pthread_t QtServer;
 pthread_t QtClient;
 
+void deserializeJoystickInfo(QDataStream &stream) {
+    stream >> joystickAxis->LeftStickX;
+    stream >> joystickAxis->LeftStickY;
+    stream >> joystickAxis->LeftTrigger;
+    stream >> joystickAxis->RightStickX;
+    stream >> joystickAxis->RightStickY;
+    stream >> joystickAxis->RightTrigger;
+    stream >> joystickAxis->DpadX;
+    stream >> joystickAxis->DpadY;
+    stream >> joystickButton->FaceButtonA;
+    stream >> joystickButton->FaceButtonB;
+    stream >> joystickButton->FaceButtonX;
+    stream >> joystickButton->FaceButtonY;
+    stream >> joystickButton->LeftBumper;
+    stream >> joystickButton->RightBumper;
+    stream >> joystickButton->Back;
+    stream >> joystickButton->Start;
+    stream >> joystickButton->Guide;
+    stream >> joystickButton->LeftStick;
+    stream >> joystickButton->RightStick;
+}
+
+void serializeSharedMemoryInfo (QDataStream &stream)
+{
+    stream << sharedCommand->userCommand;
+    QString string = QString::fromUtf8(sharedCommand->userParamChar);
+    stream << string;
+    stream.writeRawData(reinterpret_cast<const char*>(sharedCommand->userParamInt), MAX_COMMAND_DATA * sizeof(int));
+    stream.writeRawData(reinterpret_cast<const char*>(sharedCommand->userParamDouble), MAX_COMMAND_DATA * sizeof(double ));
+//    stream.writeRawData(reinterpret_cast<const char*>(sharedMemory->gaitTable), 10 * sizeof(int));
+    stream << sharedMemory->newCommand;
+    stream << sharedMemory->can1Status;
+    stream << sharedMemory->can2Status;
+    stream << sharedMemory->motorStatus;
+    stream << sharedMemory->motorBackState;
+    stream << sharedMemory->motorForeState;
+    stream << sharedMemory->LowControlState;
+    stream << sharedMemory->HighControlState;
+    stream << sharedMemory->visualState;
+    stream << sharedMemory->gaitState;
+    stream << sharedMemory->can1State;
+    stream << sharedMemory->can2State;
+    stream.writeRawData(reinterpret_cast<const char*>(sharedMemory->motorErrorStatus), MOTOR_NUM * sizeof(int));
+    stream.writeRawData(reinterpret_cast<const char*>(sharedMemory->motorTemp), MOTOR_NUM * sizeof(int));
+    stream << sharedMemory->localTime;
+    stream << sharedMemory->basePosition(0) << sharedMemory->basePosition(1) << sharedMemory->basePosition(2);
+    stream << sharedMemory->baseVelocity(0) << sharedMemory->baseVelocity(1) << sharedMemory->baseVelocity(2);
+    stream << sharedMemory->baseDesiredPosition(0) << sharedMemory->baseDesiredPosition(1) << sharedMemory->baseDesiredPosition(2);
+    stream << sharedMemory->baseDesiredVelocity(0) << sharedMemory->baseDesiredVelocity(1) << sharedMemory->baseDesiredVelocity(2);
+    for (int i = 0 ; i < 4 ; ++i){
+        stream << sharedMemory->mpcTorque[i](0) << sharedMemory->mpcTorque[i](1) << sharedMemory->mpcTorque[i](2);
+    }
+    for (int i = 0 ; i < 4 ; ++i){
+        stream << sharedMemory->bodyFootPosition[i](0) << sharedMemory->bodyFootPosition[i](1) << sharedMemory->bodyFootPosition[i](2);
+    }
+    for (int i = 0 ; i < 4 ; ++i){
+        stream << sharedMemory->globalFootPosition[i](0) << sharedMemory->globalFootPosition[i](1) << sharedMemory->globalFootPosition[i](2);
+    }
+    stream << sharedMemory->baseQuartPosition(0) << sharedMemory->baseQuartPosition(1) << sharedMemory->baseQuartPosition(2);
+    stream << sharedMemory->desiredLinearVelocity(0) << sharedMemory->desiredLinearVelocity(1) << sharedMemory->desiredLinearVelocity(2);
+    stream << sharedMemory->desiredAngularVelocity(0) << sharedMemory->desiredAngularVelocity(1) << sharedMemory->desiredAngularVelocity(2);
+    stream.writeRawData(reinterpret_cast<const char*>(sharedMemory->baseAcceleration), 3 * sizeof(double));
+    stream.writeRawData(reinterpret_cast<const char*>(sharedMemory->baseEulerPosition), 3 * sizeof(double));
+    stream.writeRawData(reinterpret_cast<const char*>(sharedMemory->baseEulerVelocity), 3 * sizeof(double));
+    stream.writeRawData(reinterpret_cast<const char*>(sharedMemory->motorPosition), MOTOR_NUM * sizeof(double));
+    stream.writeRawData(reinterpret_cast<const char*>(sharedMemory->motorVelocity), MOTOR_NUM * sizeof(double));
+    stream.writeRawData(reinterpret_cast<const char*>(sharedMemory->motorTorque), MOTOR_NUM * sizeof(double));
+    stream.writeRawData(reinterpret_cast<const char*>(sharedMemory->motorDesiredTorque), MOTOR_NUM * sizeof(double));
+    stream.writeRawData(reinterpret_cast<const char*>(sharedMemory->motorVoltage), MOTOR_NUM * sizeof(double));
+    stream << sharedMemory->gaitIteration;
+    stream.writeRawData(reinterpret_cast<const char*>(sharedCustom->customVariableDouble), MAX_COMMAND_DATA * sizeof(double));
+    stream.writeRawData(reinterpret_cast<const char*>(sharedCustom->customVariableInt), MAX_COMMAND_DATA * sizeof(int));
+}
+
 void* receiveData(void *arg)
 {
-    // 서버 IP 주소 및 포트 설정
     const QHostAddress serverAddress(QHostAddress::Any);
     const quint16 serverPort = 12345;
 
-    // 서버 생성 및 연결 대기
     QTcpServer server;
     server.listen(serverAddress, serverPort);
 
-    // 클라이언트 연결 대기 및 처리
     while (server.isListening()) {
         if (server.waitForNewConnection()) {
             QTcpSocket *socket = server.nextPendingConnection();
 
             if (socket) {
-                // 데이터 수신
                 QDataStream in(socket);
                 in.setVersion(QDataStream::Qt_5_0);
 
@@ -41,38 +120,20 @@ void* receiveData(void *arg)
                 }
                 data = socket->read(blockSize);
 
-                // 데이터 처리
                 QDataStream dataStream(&data, QIODevice::ReadOnly);
 
-                QVector<float> axisVector;
-                QVector<float> buttonVector;
-                int count = 0;
-
-                while (!dataStream.atEnd())
-                {
-                    float value;
-                    dataStream >> value;
-                    if (count < 8)
-                    {
-                        axisVector.append(value);
-                    }
-                    else
-                    {
-                        buttonVector.append(value);
-                    }
-                    count++;
-                }
+                deserializeJoystickInfo(dataStream);
 
                 if (dataStream.status() != QDataStream::Ok) {
                     qWarning() << "Error while reading data: " << dataStream.status();
                 }
                 else
                 {
-                    qDebug() << "axisVector" << axisVector;
-                    qDebug() << "buttonVector" << buttonVector;
+                    qDebug() << "deserializeJoystickInfo is done";
+//                    qDebug() << "joystickAxis->DpadY: " << joystickAxis->DpadY;
+//                    qDebug() << "joystickButton->Guide: " << joystickButton->Guide;
                 }
 
-                // 응답 전송
                 QByteArray requestData;
                 QDataStream out(&requestData, QIODevice::WriteOnly);
                 out << (qint64)0;
@@ -83,7 +144,6 @@ void* receiveData(void *arg)
                 socket->write(data);
                 socket->flush();
 
-                // 소켓 및 데이터 삭제
                 socket->disconnectFromHost();
                 socket->deleteLater();
             }
@@ -95,23 +155,19 @@ void* sendData(void* arg)
 {
     while(1)
     {
-        // 서버 IP 주소 및 포트 설정
-        const QHostAddress serverAddress("192.168.0.124");
+        const QHostAddress serverAddress("192.168.0.113");
         const quint16 serverPort = 34567;
 
-        // 서버에 연결
         QTcpSocket* socket = new QTcpSocket();
         socket->connectToHost(serverAddress, serverPort);
 
         if (socket->waitForConnected()) {
-            // 보낼 데이터 생성
 
             QByteArray byteArray;
             QDataStream stream(&byteArray, QIODevice::WriteOnly);
 
-//        serializeJoystickInfo(stream);
+            serializeSharedMemoryInfo(stream);
 
-            // 데이터 전송
             QByteArray requestData;
             QDataStream out(&requestData, QIODevice::WriteOnly);
             out << (qint64)0;
@@ -122,9 +178,7 @@ void* sendData(void* arg)
             socket->write(byteArray);
             socket->flush();
 
-            // 응답 수신
             if (socket->waitForReadyRead()) {
-                // 데이터 수신
                 QDataStream in(socket);
                 in.setVersion(QDataStream::Qt_5_0);
 
@@ -140,41 +194,23 @@ void* sendData(void* arg)
                 }
                 data = socket->read(blockSize);
 
-                // 데이터 처리
                 QDataStream dataStream(&data, QIODevice::ReadOnly);
-
-                QVector<float> axisVector;
-                QVector<float> buttonVector;
-                int count = 0;
-
-                while (!dataStream.atEnd())
-                {
-                    float value;
-                    dataStream >> value;
-                    if (count < 8)
-                    {
-                        axisVector.append(value);
-                    }
-                    else
-                    {
-                        buttonVector.append(value);
-                    }
-                    count++;
-                }
 
                 if (dataStream.status() != QDataStream::Ok) {
                     qWarning() << "Error while reading data: " << dataStream.status();
                 }
                 else
                 {
-                    qDebug() << "axisVector" << axisVector;
-                    qDebug() << "buttonVector" << buttonVector;
+                    qDebug() << "serializeSharedMemoryInfo is done";
+//                    qDebug() << "sharedCommand->userCommand: " << sharedCommand->userCommand;
+//                    qDebug() << "sharedCommand->userParamChar: " << sharedCommand->userParamChar;
                 }
 
                 socket->disconnectFromHost();
                 socket->deleteLater();
             }
-        } else {
+        }
+        else {
             qWarning() << "Could not connect to server: " << socket->errorString();
         }
     }
@@ -183,6 +219,12 @@ void* sendData(void* arg)
 
 int main(int argc, char *argv[])
 {
+    joystickAxis = (pAXIS)malloc(sizeof(AXIS));
+    joystickButton = (pBUTTON)malloc(sizeof(BUTTON));
+    sharedCommand = (pUI_COMMAND)malloc(sizeof(UI_COMMAND));
+    sharedMemory = (pSHM)malloc(sizeof(SHM));
+    sharedCustom = (pCUSTOM_DATA)malloc(sizeof(CUSTOM_DATA));
+
     QCoreApplication a(argc, argv);
     pthread_create(&QtClient,NULL,sendData,NULL);
     pthread_create(&QtServer,NULL,receiveData,NULL);

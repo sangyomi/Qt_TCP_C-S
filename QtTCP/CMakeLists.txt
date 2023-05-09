@@ -4,6 +4,8 @@ project(QtTCP)
 set(CMAKE_PREFIX_PATH "/usr/lib/x86_64-linux-gnu")  # Qt 설치 경로
 find_package(Qt5 COMPONENTS Widgets Network REQUIRED)
 
-add_executable(QtTCP main.cpp)
+add_executable(QtTCP main.cpp ServeStructure.cpp)
 
 target_link_libraries(QtTCP Qt5::Widgets Qt5::Network)
+
+target_link_libraries(QtTCP pthread)

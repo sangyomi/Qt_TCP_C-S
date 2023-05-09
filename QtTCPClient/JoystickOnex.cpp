@@ -60,15 +60,16 @@ bool JoystickOnex::Read()
             break;
     }
 
-    std::cout<<"axis/10000: ";
-    for(size_t i(0);i<joy_axis.size();++i)
-        cout<<" "<<setw(2)<<joy_axis[i]/10000;
-    std::cout<<std::endl;
-
-    std::cout<<"  button: ";
-    for(size_t i(0);i<joy_button.size();++i)
-        std::cout<<" "<<(int)joy_button[i];
-    std::cout<<std::endl;
+//
+//    std::cout<<"axis/10000: ";
+//    for(size_t i(0);i<joy_axis.size();++i)
+//        cout<<" "<<setw(2)<<joy_axis[i]/10000;
+//    std::cout<<std::endl;
+//
+//    std::cout<<"  button: ";
+//    for(size_t i(0);i<joy_button.size();++i)
+//        std::cout<<" "<<(int)joy_button[i];
+//    std::cout<<std::endl;
 
     usleep(100);
 }

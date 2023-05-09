@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/QtTCP.dir/ServeStructure.cpp.o"
+  "CMakeFiles/QtTCP.dir/ServeStructure.cpp.o.d"
   "CMakeFiles/QtTCP.dir/main.cpp.o"
   "CMakeFiles/QtTCP.dir/main.cpp.o.d"
   "QtTCP"

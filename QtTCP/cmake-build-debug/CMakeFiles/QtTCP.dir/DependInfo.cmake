@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/sangjun/QT_TCP/QtTCP/ServeStructure.cpp" "CMakeFiles/QtTCP.dir/ServeStructure.cpp.o" "gcc" "CMakeFiles/QtTCP.dir/ServeStructure.cpp.o.d"
   "/home/sangjun/QT_TCP/QtTCP/main.cpp" "CMakeFiles/QtTCP.dir/main.cpp.o" "gcc" "CMakeFiles/QtTCP.dir/main.cpp.o.d"
   )
 
